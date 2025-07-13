@@ -1,0 +1,51 @@
+nav {
+  font-family: sans-serif;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  height: 48px;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+  padding: 0 32px;
+}
+
+.nav-left-div ul,
+.nav-right-div ul {
+  list-style-type: none;
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-left-div ul li,
+.nav-right-div ul li {
+  position: relative;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.nav-left-div ul li::after,
+.nav-right-div ul li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: orange;
+  transition: width 0.3s ease;
+}
+
+.nav-left-div ul li:hover::after,
+.nav-right-div ul li:hover::after {
+  width: 100%;
+}
+.nav-left-div ul li:hover,
+.nav-right-div ul li:hover {
+  color: orange;
+}
+.xaomi-logo {
+  width: 28px;
+}
