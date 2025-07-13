@@ -1,0 +1,26 @@
+/* fallback for browsers without variable font support */
+@font-face {
+  font-family: "Brand";
+  src: url("/fonts/Brand-Light.woff2") format("woff2");
+  font-weight: 100 299;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+}
+@font-face {
+  font-family: "Brand";
+  src: url("/fonts/Brand-Regular.woff2") format("woff2");
+  font-weight: 300 499;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+}
+/* ... other weights and unicode-ranges */
+
+@supports (font-variation-settings: normal) {
+  @font-face {
+    font-family: "Brand";
+    src: url("/fonts/Brand.woff2") format("woff2 supports variations");
+    font-weight: 100 900;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+  }
+}
