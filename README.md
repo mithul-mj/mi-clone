@@ -26,8 +26,3 @@ It is **not responsive**, and is best viewed on desktop screens.
 
 - **HTML5**  
 - **CSS3** (Flexbox, Grid, basic positioning)
-
----
-
-## 📁 Folder Structure
-
